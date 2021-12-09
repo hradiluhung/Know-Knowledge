@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="style-daftarWaliMurid.css" />
+    <title>Daftar | Wali Murid</title>
+  </head>
+  <body>
+    <div id="container">
+
+      <div class="KKL">
+        <a href="../index.html">
+          <h1 class="animate__animated animate__fadeInUp">Know<span>Knowledge</span></h1>
+        </a>
+
+        <div class="icon">
+          <div class="bulet animate__animated animate__fadeIn"><img src="../icon/bulet.png" alt="" width="120px" /></div>
+          <div class="segitiga animate__animated animate__rotateInDownRight"><img src="../icon/segitiga.png" alt="" width="70px" /></div>
+        </div> <!--Icon-->
+      </div>
+
+      <div class="daftarContainer animate__animated animate__fadeIn">
+        <div class="murid animate__animated animate__headShake">Wali Murid</div>
+        <div class="Daftar">Daftar</div>
+        <div id="form">
+          <form action="loginWaliMurid.html" method="get">
+            <div class="apartForm left">
+              <label class="titleForm" for="nik">NIK</label>
+              <input id="nik" type="text" name="nik" required/>
+              <label class="titleForm" for="NamaLengkap">Nama Lengkap</label>
+              <input id="namaLengkap" type="text" name="NamaLengkap" required/>
+              <label class="titleForm" for="email">Email</label>
+              <input id="email" type="email" name="email" required/>
+              <label class="titleForm" for="username">Username</label>
+              <input id="username" type="text" name="username" required/>
+            </div>
+
+            <div class="apartForm right">
+              <label class="titleForm" for="kodeMurid">Kode Murid</label>
+              <input id="kodeMurid" type="text" name="kodeMurid" required/>
+              <label class="titleForm" for="password">Password</label>
+              <input id="password" type="password" name="password" required/>
+              <label class="titleForm" for="password">Konfirmasi Password</label>
+              <input id="cpw" type="password" name="confirmPassword" required/>
+              <div id="buttons">
+                <div class="tombol">
+                  <button type="submit" name="daftar">Daftar</button>
+                </div>
+                <div class="tombol">
+                  <a href="../index.html">
+                    <div id="batal">Batal</div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div><!--daftarContainer-->
+
+    </div> <!--Container-->
+
+    <script src="script-daftarWaliMurid.js"></script>
+  </body>
+</html>

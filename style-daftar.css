@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@400;500;600;700&display=swap");
+
+:root{
+  --darkblue: #14325f;
+  --lightblue: #149ff0;
+  --lighterblue: #61d2ff;
+  --bluesky: #b5e1fa;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body::after{
+   content: "";
+   background:white url('icon/background.jpg') center center no-repeat;
+   background-size: cover;
+   opacity: 0.1;
+   top: -100px;
+   left: 0;
+   bottom: 0;
+   right: 0;
+   position: absolute;
+   z-index: -1;
+}
+
+#container{
+  width: 85vw;
+  height: 620px;
+  margin: 40px auto;
+  position: relative;
+}
+
+a{
+  text-decoration: none;
+  color: var(--lighterblue);
+}
+
+.KKL {
+  color: var(--lighterblue);
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 60px;
+  text-align: center;
+  width: 300px;
+  margin: 0 auto 80px;
+}
+
+.KKL span{
+  display: block;
+  margin-top: 0;
+}
+
+.wrapper {
+  text-align: center;
+  width: 600px;
+  height: 40%;
+  padding: 30px 30px 25px;
+  margin: 0 auto;
+  background: linear-gradient(340deg, var(--lightblue), var(--lighterblue));
+  color: white;
+  border-radius: 20px;
+}
+
+.judul {
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.buttons button {
+  font-size: 16px;
+  padding: 10px;
+  margin: 5px;
+  width: 150px;
+  height: 50px;
+  color: var(--lightblue);
+  background-color: white;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 2px 2px 6px -3px rgba(0,0,0,0.63);
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: var(--bluesky);
+}
+
+button:active{
+  position: relative;
+  top: 3px;
+}
+
+.icon {
+  margin: 0 auto;
+  width: 110px;
+  margin-top: 120px;
+}
+
+.bulet {
+  display: inline;
+}
+
+.segitiga {
+  display: inline;
+}

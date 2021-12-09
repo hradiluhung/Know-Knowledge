@@ -1,0 +1,265 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@400;500;600;700&display=swap");
+
+:root{
+  --darkblue: #14325f;
+  --lightblue: #149ff0;
+  --lighterblue: #61d2ff;
+  --bluesky: #b5e1fa;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body::after{
+   content: "";
+   background:white url('../icon/background.jpg') center center no-repeat;
+   height: 1000px;
+   background-attachment: fixed;
+   background-size: cover;
+   opacity: 0.1;
+   top: -100px;
+   left: 0;
+   bottom: 0;
+   right: 0;
+   position: absolute;
+   z-index: -10;
+}
+
+#container{
+  width: 85vw;
+  height: 620px;
+  margin: 40px auto;
+  position: relative;
+}
+
+#sidebar{
+  float: left;
+  width: 25%;
+  height: 100%;
+}
+
+#sidebarFixed{
+  background: linear-gradient(300deg, var(--lightblue), var(--lighterblue));
+  border-radius: 20px;
+  width: 320px;
+  height: 620px;
+  padding: 25px;
+  position: fixed;
+}
+
+.title {
+text-align: center;
+font-size: 25px;
+margin: 20px 0 20px;
+font-weight: bolder;
+color: white;
+padding-bottom: 20px;
+border-bottom: 1px solid white;
+}
+
+.list-group-item {
+font-size: 18px;
+height: 50px;
+border-radius: 5px;
+line-height: 35px;
+text-align:  center;
+width: 90%;
+margin: 0 auto;
+background: none;
+border: none;
+color: white;
+}
+
+.list-group-item:hover {
+background: none;
+color: var(--darkblue);
+}
+
+.list-group-item.active {
+background-color: white;
+color: var(--lightblue);
+border: none;
+box-shadow: 2px 2px 6px -3px rgba(0,0,0,0.63);
+}
+
+.list-group-item:active {
+color: white;;
+}
+
+.dashboardBody{
+float: left;
+width: 75%;
+height: 100%;
+padding: 25px;
+}
+
+.dashboardHeader {
+color: var(--lightblue);
+height: 20%;
+position: relative;
+}
+
+.KKL {
+font-size: 36px;
+font-weight: bold;
+color: var(--lightblue);
+margin-left: 20px;
+}
+
+.slmtMurid {
+font-size: 16px;
+color: var(--darkblue);
+margin-left: 20px;
+}
+
+#corner {
+position: absolute;
+top: 10px;
+right: 0;
+width: 28%;
+height: 80px;
+}
+
+#informationBtn{
+float: left;
+background: linear-gradient(300deg, var(--lightblue), var(--lighterblue));
+border-radius: 20px;
+height: 50px;
+width: 60%;
+margin-top: 5px;
+text-align: center;
+line-height: 50px;
+color: white;
+text-decoration: none;
+font-weight: bold;
+}
+
+#informationBtn:hover{
+box-shadow: 2px 2px 6px -3px rgba(0,0,0,0.63);
+}
+
+#informationBtn:active{
+position: relative;
+top: 2px;
+}
+
+.profilBtn{
+float: right;
+width: 25%;
+}
+
+.profilBtn img{
+position: absolute;
+right: 20px;
+}
+
+.dropdown-toggle{
+background: none;
+border: none;
+}
+
+.dropdown-toggle:hover{
+background: none;
+border: none;
+}
+
+.dropdown-toggle:focus{
+background: none;
+border: none;
+outline: none;
+}
+
+.dropdown-toggle::after{
+visibility: hidden;
+}
+
+.dropdown-item:hover{
+background: var(--lighterblue);
+}
+
+.dropdown-menu{
+  z-index: 999;
+}
+
+#pilihanKelas{
+height: 80%;
+}
+
+.pilihanKelasColm{
+width: 33.33%;
+float: left;
+}
+
+.card{
+background: var(--darkblue);
+width: 90%;
+margin: 0 auto;
+height: 160px;
+border-radius: 10px;
+padding: 5px;
+}
+
+.card-body h5{
+font-weight: bold;
+border-bottom: 1px solid white;
+padding-bottom: 5px;
+}
+
+.card-body{
+color: white;
+}
+
+.btn-primary{
+color: var(--darkblue);
+background: white;
+}
+
+.btn-primary:hover{
+background: var(--lighterblue);
+}
+
+.btn-primary:active{
+border:none;
+}
+
+.icon{
+position: absolute;
+right: 40px;
+bottom: 0;
+z-index: -1;
+}
+
+.bulet, .segitiga{
+display: inline;
+}
+
+.pertemuan{
+  padding-left: 20px;
+  border-bottom: 1px solid var(--darkblue);
+  margin-bottom: 50px;
+  padding-bottom: 40px;
+}
+
+ul{
+  position: relative;
+  list-style: none;
+  padding-left: 40px;
+  font-size: 18px;
+}
+
+ul li{
+  margin: 10px 0;
+}
+
+ul li a{
+  color: var(--lightblue);
+  text-decoration: none;
+}
+
+ul li img{
+  margin-right: 40px;
+}
